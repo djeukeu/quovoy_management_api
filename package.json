@@ -15,12 +15,21 @@
 	"license": "ISC",
 	"description": "",
 	"devDependencies": {
+		"@eslint/js": "^9.36.0",
 		"env-cmd": "^11.0.0",
+		"eslint": "^9.36.0",
+		"eslint-config-prettier": "^10.1.8",
+		"eslint-import-resolver-typescript": "^4.4.4",
+		"eslint-plugin-import": "^2.32.0",
+		"eslint-plugin-prettier": "^5.5.4",
+		"globals": "^16.4.0",
 		"nodemon": "^3.1.10",
+		"prettier": "^3.6.2",
 		"prisma": "^6.16.2",
 		"resolve-tspaths": "^0.8.23",
 		"ts-node": "^10.9.2",
-		"tsconfig-paths": "^4.2.0"
+		"tsconfig-paths": "^4.2.0",
+		"typescript-eslint": "^8.44.0"
 	},
 	"dependencies": {
 		"@prisma/client": "^6.16.2"
