@@ -10,7 +10,7 @@ Make sure you have the following installed:
 
 ### 1. Clone the repository
 ```
-git clone 
+git clone $REPOSITORY_LINK
 ```
 
 ### 2. Install packages 
