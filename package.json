@@ -3,13 +3,18 @@
 	"version": "1.0.0",
 	"main": "server.js",
 	"scripts": {
+		"postinstall": "tsc && resolve-tspaths",
 		"start": "node dist/server.js",
 		"dev": "env-cmd -f .env.development nodemon",
 		"build": "tsc && resolve-tspaths",
 		"pretty": "prettier --write ./src/**/* ",
 		"lint": "eslint .",
 		"lint:fix": "eslint . --fix",
-		"prisma:dev": "env-cmd -f .env.development prisma migrate dev --name development"
+		"prisma:dev": "env-cmd -f .env.development prisma migrate dev --name development",
+    	"prisma:deploy": "env-cmd -f .env.production prisma migrate deploy"
+	},
+	"engines": {
+		"node": "22.7.0"
 	},
 	"author": "",
 	"license": "ISC",
